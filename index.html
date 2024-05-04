@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>DataCodeCamp</title>
+
+    <link rel="icon" href="../images/logo.png" type="image/x-icon" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Lugrasimo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Anton&family=Kalam:wght@300;400;700&family=Lilita+One&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Permanent+Marker&family=Satisfy&family=Slabo+27px&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(22, 18, 36);
+        }
+
+        .top-banner {
+            background-color: chartreuse;
+            border-radius: 20px;
+            cursor: pointer;
+            animation: animate 4s infinite;
+            z-index: 1;
+
+        }
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .cont2 {
+            margin-top: 15vh;
+        }
+
+        .cont2 h1 {
+            font-size: 500%;
+            font-family: "Jersey 15", sans-serif;
+            font-weight: 700;
+            line-height: 90%;
+        }
+
+        .cont2 .heading-text h1:first-child {
+            font-size: 400%;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            line-height: 110%;
+        }
+
+        .cont2 .details p {
+            font-size: 110%;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+
+        .join-btn {
+            transition: 0.7s all;
+            text-shadow: 2px 2px rgb(96, 76, 76);
+        }
+
+        .join-btn:hover {
+            background-color: rgb(63, 77, 14);
+            transform: scale(1.1, 1.1);
+        }
+
+        .cont2 .image-1 img {
+            width: 100%;
+        }
+
+        .cont3 .details-2 p {
+            font-size: 110%;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            color: aqua;
+        }
+
+        .cont3 h1 {
+            font-size: 320%;
+            font-family: "Merriweather", serif;
+            font-weight: 700;
+            color: rgb(149, 149, 124);
+
+        }
+
+        .cont3 .heading-text-2 h1:last-child {
+            font-size: 260%;
+            font-family: "Merriweather", serif;
+            font-weight: 700;
+            color: white;
+        }
+
+        .cont3 .heading-text-2 span {
+            font-family: "Lugrasimo", cursive;
+            font-weight: 900;
+        }
+
+        .cont3 .two-text {
+            font-weight: 900;
+            line-height: 80%;
+        }
+
+        .why-join {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            color: burlywood;
+        }
+
+        .cont4 .why-join-box {
+            border-radius: 30px;
+            border: 1px solid transparent;
+            border-right: 0.1px solid rgb(63, 56, 56);
+            border-bottom: 0.1px solid rgb(63, 56, 56);
+            transition: 0.3s all;
+        }
+
+        .cont4 .why-join-box:hover {
+            box-shadow: inset 2px 2px 7px 2px rgb(56, 50, 50);
+            transform: translate(2%, 2%);
+            border-right: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+        }
+
+        .cont4 .why-join-box h2 {
+            font-family: "Lilita One", sans-serif;
+            font-weight: 500;
+        }
+
+        .cont4 .why-join-box span {
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 600;
+            color: azure;
+        }
+
+        .cont5 button {
+            font-size: 4vh;
+            border-radius: 40px;
+        }
+
+        .cont5 button:hover {
+            background-color: #4965d8;
+            border: 1px solid #050310;
+            border-radius: 10px;
+        }
+
+        .cont5 {
+            margin-bottom: 150px;
+        }
+
+        .cont5 h2 span {
+            font-family: "Satisfy", cursive;
+            font-weight: 900;
+            color: #c89838;
+        }
+
+        .cont5 h2 {
+            color: aquamarine;
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
+        }
+
+        .cont6 {
+            background-image: url(../images/what4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 20vw;
+            margin-bottom: 150px;
+
+        }
+
+        .cont6 .cont6-heading {
+            color: rgb(7, 113, 113);
+            font-family: "Acme", sans-serif;
+            font-weight: 400;
+            text-shadow: 3px 3px rgb(27, 8, 8);
+
+        }
+
+        .cont6 .details {
+            padding-left: 7.5vw;
+            padding-top: 6vh;
+        }
+
+        .cont6 span {
+            font-family: "Spectral", serif;
+            font-weight: 600;
+            color: azure;
+        }
+
+        .cont7 .cont7-list {
+            background-image: url(../images/ready.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .cont7 .overlay {
+            width: 100%;
+            height: 100%;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .cont7 .cont7-heading {
+            font-family: "Abril Fatface", serif;
+            font-weight: 400;
+            color: #388ac8;
+            text-shadow: 3px 3px 5px rgb(75, 36, 36);
+        }
+
+        .cont7 .cont7-footer,
+        .cont7 .cont7-footer span {
+            line-height: 150%;
+            font-family: "Kalam", cursive;
+            font-weight: 600;
+            text-shadow: 2px 2px black;
+        }
+
+        .cont7 button {
+            width: 30%;
+            height: 9vh;
+            background-color: rgba(120, 32, 5, 0.7);
+            border: none;
+            transition: 0.7s all;
+            color: aqua;
+            border-radius: 50px;
+            text-shadow: 2px 2px black;
+            box-shadow: 2px 2px 16px 2px rgb(11, 11, 10);
+            animation: animate3 4s infinite;
+
+        }
+
+        .cont8 .accordion .card {
+            border-radius: 10px;
+            background-color: rgba(48, 42, 102, 0.3);
+            color: bisque;
+        }
+
+        @keyframes animate3 {
+            0% {
+                transform: scale(100%);
+            }
+
+            50% {
+                transform: scale(110%);
+            }
+
+            100% {
+                transform: scale(100%);
+            }
+        }
+
+        .cont7 button:hover {
+            background-color: rgb(13, 13, 12);
+            width: 60%;
+            color: white;
+            box-shadow: 1px 1px 6px 1px rgb(149, 129, 129);
+
+        }
+
+        .cont9 button {
+            font-size: 4vh;
+            border-radius: 40px;
+        }
+
+        .cont9 button:hover {
+            background-color: #4965d8;
+            border: 1px solid #050310;
+            border-radius: 10px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 1vh;
+            width: 50%;
+            background-color: #c89838;
+            padding: 1vh;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 20px;
+            line-height: 50%;
+
+        }
+
+        .countdown {
+            width: 40%;
+        }
+
+        .counter {
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .footer .subtext {
+            font-size: 2vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer button {
+            animation: animate2 1s infinite;
+        }
+
+        .spacextra {
+            height: 170px;
+            background-color: rgb(15, 9, 32);
+            justify-content: space-around;
+        }
+
+
+        @keyframes animate2 {
+            0% {
+                background-color: crimson;
+            }
+
+            50% {
+                background-color: #1f1742;
+            }
+
+            100% {
+                background-color: crimson;
+            }
+
+        }
+
+        @media screen and (max-width: 1050px) {
+
+            .cont3 .heading-text-2{
+                padding-top: 6vh;
+            }
+
+            .footer{
+                width: 60%;
+            }
+
+            .footer .hurry-text,
+            .footer .left-text {
+                display: none;
+            }
+
+            .footer .counter {
+                font-size: 3.5vw;
+            }
+
+            .footer .subtext {
+                font-size: 1vw;
+            }
+            
+        }
+
+        @media screen and (max-width: 600px) {
+
+            h2 {
+                font-size: 120%;
+            }
+
+            h4 {
+                font-size: 70%;
+            }
+
+            .left-section {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .cont3 .row {
+                flex-direction: column-reverse;
+            }
+
+            .cont3 h1 {
+                font-size: 260%;
+            }
+
+            .cont3 .heading-text-2 h1:last-child {
+                font-size: 220%;
+            }
+
+            .footer {
+                padding: 0;
+                width: 100%;
+
+            }
+
+            .footer .hurry-text,
+            .footer .left-text {
+                display: none;
+            }
+
+            .footer .counter {
+                font-size: 4vw;
+            }
+
+            .footer .subtext {
+                font-size: 2vw;
+            }
+
+            .footer button {
+                padding: 0.3vh;
+                line-height: 120%;
+            }
+
+            .why-join {
+                font-size: 10vw;
+
+            }
+
+            .cont4 {
+                flex-direction: column;
+            }
+
+            .cont4 .why-join-box {
+                margin-bottom: 10px;
+            }
+
+            .cont5 h2 span {
+                font-size: 4vh;
+            }
+
+            .cont5 .countdown {
+                width: 70%;
+            }
+
+            .cont5 .counter {
+                font-size: 7vw;
+            }
+
+            .cont5 .subtext {
+                font-size: 2.5vw;
+            }
+
+            .cont6 .cont6-heading {
+                font-size: 14vw;
+            }
+
+            .cont6 .details {
+                padding-left: 5vw;
+
+                /* line-height: 500%; */
+            }
+
+            .cont6 span {
+                text-shadow: 2px 2px black;
+                font-size: 4.5vw;
+            }
+
+            .cont7 .cont7-heading {
+                font-size: 10vw;
+            }
+
+            .cont7 .list-item {
+                font-size: 4vw;
+            }
+
+            .cont7 .cont7-footer {
+                font-size: 4vw;
+            }
+
+            .cont7 button {
+                width: 60%;
+                font-size: 2vw;
+            }
+
+            .spacextra {
+                height: 15vh;
+                flex-direction: column;
+                font-size: 2vh;
+                justify-content: flex-start;
+            }
+
+            .spacextra h5 {
+                font-size: 2vh;
+                margin-bottom: 0;
+            }
+        }
+
+        @media screen and (max-width: 389px) {
+
+            h2 {
+                font-size: 100%;
+            }
+
+            h4 {
+                font-size: 60%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container  top-banner mx-auto mb-5 fixed-top">
+        <a href="#" class="text-reset text-decoration-none">
+            <div>
+                <h2 class="text-center mt-2"><strong>Launch Your Cloud Journey: Deep Dive into AWS</strong></h2>
+                <h4 class="text-center mb-1 ">Hindi + English</h4>
+            </div>
+        </a>
+    </div>
+
+    <div class="container cont2">
+        <div class="row">
+            <div class="col-sm-6 mb-3 text-primary  d-flex flex-column px-1 left-section ">
+                <div class="heading-text text-info">
+                    <h1>2 Hours Of <br> Workshop On</h1>
+                    <h1 class="text-warning">Cloud <br>Computing</h1>
+                </div>
+                <div class="details mt-2 text-light">
+                    <p>At DataCodeCloud, we're passionate about empowering individuals and businesses to harness the
+                        power of cloud computing. Our mission is to provide comprehensive training and resources to help
+                        you succeed in the fast-paced world of cloud technology.</p>
+                </div>
+                <div class="mt-2">
+                    <a href="#" class="text-reset text-decoration-none">
+                        <button class="join-btn btn btn-success btn-lg text-light border-none"><strong>Join the Workshop
+                                <i class="bi bi-arrow-right"></i></strong></button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3 text-white ">
+                <div class="image-1">
+                    <img src="../images/image-1.webp" alt="image" class="mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container cont3 mt-5 py-5 ">
+        <div class="row d-flex">
+
+
+            <div class="col-sm-5 mt-5 pt-3 text-5 px-0">
+                <div class="details-2 mt-2 text-center">
+                    <p>Are you eager to unlock the power of <strong class="text-primary">Cloud computing</strong> and
+                        transform your business or career?<br>
+                        <br>This comprehensive <strong class="text-warning">3-hour AWS workshop</strong> is designed for
+                        beginners, equipping you with the
+                        essential knowledge and skills to get started with Amazon Web Services, the leading cloud
+                        platform.
+                    </p>
+                </div>
+                <div class="mt-5 text-center ">
+                    <a href="#" class="text-reset text-decoration-none">
+                        <button class="join-btn btn btn-success btn-lg text-light border-none"><strong>Join the Workshop
+                                <i class="bi bi-arrow-right"></i></strong></button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-7 text-primary ">
+                <div class="heading-text-2 text-secondary text-center">
+                    <h1>Launch Your <br> Cloud Journey:</h1>
+                    <h1 class="text-light">Dive into AWS in <br><strong
+                            class=" two-text text-warning display-2">2</strong><br><span class="text-danger "> Power -
+                            Packed </span><br>Hours</h1>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class=" why-join text-center display-3 mt-5">Why to Join ???</div>
+
+    <div class="container cont4 d-flex text-white justify-content-around py-5 text-center">
+        <div class="why-join-box d-flex flex-column mx-4 px-2 py-5">
+            <h2 class="text-danger">Comprehensive Training</h2><br>
+            <span>Master the essentials of cloud computing with our expert-led <br>courses.</span>
+        </div>
+        <div class="why-join-box d-flex flex-column mx-4 px-2 py-5 ">
+            <h2 class="text-warning">Practical <br>Skills</h2><br>
+            <span>Gain hands-on experience through real-world projects and <br>scenarios.</span>
+        </div>
+        <div class="why-join-box d-flex flex-column mx-4 px-3 py-5">
+            <h2 class="text-light">Career Opportunities</h2><br>
+            <span>Unlock new career paths and advance your professional <br>journey.</span>
+        </div>
+    </div>
+
+
+    <div class="container cont5 mt-5 text-center">
+        <h2><span class="h1">No Prerequisites required !</span> We'll start from the basics and guide
+            you step-by-step through AWS cloud computing.</h2>
+
+        <div class=" h row countdown d-flex flex-row justify-content-around text-center text-success mx-auto my-5">
+            <span class=" col-3 d-flex flex-column p-0 m-0">
+                <span id="daysCounter" class="h1 counter mb-2">00</span>
+                <span class="subtext">Days</span>
+            </span>
+            <span class=" col-3 d-flex flex-column p-0 m-0">
+                <span id="hoursCounter" class="h1 counter mb-2">00</span>
+                <span class="subtext">Hours</span>
+            </span>
+            <span class=" col-3 d-flex flex-column p-0 m-0">
+                <span id="minutesCounter" class="h1 counter mb-2">00</span>
+                <span class="subtext">Minutes</span>
+            </span>
+            <span class=" col-3 d-flex flex-column p-0 m-0 ">
+                <span id="secondsCounter" class="h1 counter mb-2">00</span>
+                <span class="subtext">Seconds</span>
+            </span>
+
+        </div>
+
+        <div class="mt-2">
+            <a href="#" class="text-reset text-decoration-none">
+                <button class="join-btn btn btn-danger py-3 px-5 text-light border-none"><strong>Join Now !
+                        <i class="bi bi-arrow-right"></i></strong></button>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="container mx-auto cont6 py-5 row">
+        <div class="col-sm-5 text-center display-3 cont6-heading my-auto">What You will Get ?</div>
+        <div class=" details col-sm-6 d-flex flex-column ml-3 pr-0">
+            <div>
+                <i class=" h5 text-success bi bi-check2-circle"></i>
+                <span class=" h5">Introduction to AWS cloud computing concepts and terminology.</span><br><br>
+            </div>
+            <div>
+                <i class=" h5 text-success bi-check2-circle"></i>
+                <span class=" h5">Overview of key AWS services and their use cases.</span><br><br>
+            </div>
+            <div>
+                <i class=" h5 text-success bi bi-check2-circle"></i>
+                <span class=" h5">Hands-on experience with AWS tools and services.</span><br><br>
+            </div>
+            <div>
+                <i class=" h5 text-success bi bi-check2-circle"></i>
+                <span class=" h5">Live Projects.</span><br><br>
+            </div>
+            <div>
+                <i class=" h5 text-success bi bi-check2-circle"></i>
+                <span class=" h5">And More...</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid cont7 d-flex flex-column px-0 mb-5">
+        <div class="cont7-heading display-4 mx-5 my-4">You are ready If You...</div>
+        <div class="cont7-list mx-0">
+            <div class="overlay pt-5 pb-2">
+                <div class="list-item  mx-5 my-3 h5">
+                    <i class=" text-warning bi bi-hand-thumbs-up"></i>
+                    <span>Are A college student who wants to <strong class="text-primary">UpSkill.</strong></span>
+                </div>
+                <div class="list-item mx-5 my-3 h5">
+                    <i class=" text-warning bi bi-hand-thumbs-up"></i>
+                    <span> Are Looking For <strike class="text-danger">100%</strike> <strong class="text-success">
+                            <u>200% Hike.</u></strong></span>
+                </div>
+                <div class="list-item mx-5 my-3 h5">
+                    <i class=" text-warning bi bi-hand-thumbs-up"></i>
+                    <span>Are a <strong class="text-info">Working Professional</strong> who wants to <strong
+                            class="text-primary">UpSkill.</strong></span>
+                </div>
+                <div class="list-item mx-5 my-3 h5">
+                    <i class=" text-warning bi bi-hand-thumbs-up"></i>
+                    <span>Are a <strong class="text-warning">Non-Technical Working Professional</strong> who wants to
+                        <strong class="text-primary">UpSkill.</strong></span>
+                </div>
+                <div class="list-item mx-5 my-3 h5">
+                    <i class=" text-warning bi bi-hand-thumbs-up"></i>
+                    <span>Are Looking For a <strong class="text-info">Job Change</strong> In the Cloud Domain.</span>
+                </div>
+                <div class="list-item mx-5 my-3 h5">
+                    <i class=" text-warning bi bi-hand-thumbs-up"></i>
+                    <span>Want To <strong class="text-success">Build your Startup.</strong></span>
+                </div>
+                <div class="list-item mx-5 my-3 h5">
+                    <i class=" text-warning bi bi-hand-thumbs-up"></i>
+                    <span>Know Cloud But want to <strong class="text-info">Become A Pro.</strong></span>
+                </div>
+                <div class="list-item mx-5 mt-3 mb-5 h5">
+                    <i class=" text-warning bi bi-hand-thumbs-up"></i>
+                    <span><strong class="text-success">Know The Market Need</strong> and know This Is In Boom. So
+                        <strong class="text-warning"> Want To Be Part Of This Community. </strong></span>
+                </div>
+                <div class="cont7-footer h3 text-center mt-4">
+                    Don't miss this opportunity to take your first step towards cloud mastery! <br>
+                    Limited seats are available <br>
+                    <span class="h1 text-danger">Register now!</span> <br>
+                    🚀🚀🚀
+                </div>
+                <div class="text-center">
+                    <a href="#">
+                        <button class="mx-auto px-3">
+                            <strong class="h4"><strong>Join The Workshop </strong><i
+                                    class="bi bi-arrow-right"></i></strong>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container cont8 my-5">
+        <div class="cont8-heading mt-5">
+            <h1 class="text-warning">Have Any Doubts? 🤔🤔</h1>
+            <span class="text-muted">These FAQs Can Help You To Get More Idea About The Workshop</span>
+        </div>
+
+        <div class="accordion" id="accordionFAQ">
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingOne">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left"
+                            type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Is This In Hindi ?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        Not Completly But Yes Will Use both Hindi And English Based On The Audience.
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left collapsed"
+                            type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Will this be live or pre-recorded?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        The workshop will be conducted live, allowing for real-time interaction with the instructors.
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingThree">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left collapsed"
+                            type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Are there any pre-requisites to attend this workshop?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        No, there are no prerequisites. The workshop will start from the basics and gradually progress
+                        to more advanced topics.
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingOne">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left"
+                            type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                            aria-controls="collapseFour">
+                            Is there any age limit for the workshop?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        There is no age limit for attending the workshop. Anyone interested in learning about AWS cloud
+                        computing is welcome to join.
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingFive">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left collapsed"
+                            type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            Will the workshop be recorded?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        No! The workshop will be conducted live, allowing for real-time interaction with the
+                        instructors.
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingSix">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left collapsed"
+                            type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                            aria-controls="collapseSix">
+                            Will we create projects in this workshop?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        Yes, the workshop includes hands-on projects that will allow you to apply the concepts and
+                        skills learned during the sessions.
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingSeven">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left"
+                            type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true"
+                            aria-controls="collapseSeven">
+                            Do I need to have prior experience with AWS to attend this workshop?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        No prior experience is required. The workshop will start from the basics and gradually progress
+                        to more advanced topics.
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingEight">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left collapsed"
+                            type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                            aria-controls="collapseEight">
+                            Are there any specific software or tools I need to install before the workshop?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        No, Before The Workshop We Will Share The Doc To Create A Free Account With AWS ( It Will Be
+                        Super Simple).
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header p-1" id="headingNine">
+                    <h2 class="mb-0">
+                        <button
+                            class="d-flex pb-0 mx-0 justify-content-between text-decoration-none text-reset btn btn-link btn-block text-left collapsed"
+                            type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+                            aria-controls="collapseNine">
+                            Question Not Listed Here ?
+                            <i class=" h5 bi bi-chevron-bar-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
+                    <div class="card-body text-info">
+                        Write Personally: datacodecamp@gmail.com.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cont9 text-center my-5">
+        <div class="mt-2">
+            <a href="#" class="text-reset text-decoration-none">
+                <button class="join-btn btn btn-danger py-3 px-5 text-light border-none"><strong>Join Now !
+                        <i class="bi bi-arrow-right"></i></strong></button>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="spacextra d-flex align-items-center">
+        <a href="https://www.datacodecamp.com/privacy-policy" target="_blank">Privacy Policy</a>
+        <h5 class="text-light">@datacodecamp</h5>
+        <a href="https://www.datacodecamp.com/terms-and-conditions" target="_blank">Terms and Conditions</a>
+
+    </div>
+
+    <footer class="footer mt-auto my-0 py-1 ">
+        <div class=" container d-flex flex-row justify-content-around mx-0">
+            <span class="hurry-text h2 my-auto text-center my-0 py-0 text-dark"><strong>Hurry !</strong>
+            </span>
+            <div class=" row countdown d-flex flex-row justify-content-around text-center">
+                <span class=" col-3 d-flex flex-column p-0 m-0">
+                    <span id="footer-daysCounter" class="h3 counter mb-0">00</span>
+                    <span class="subtext">Days</span>
+                </span>
+                <span class=" col-3 d-flex flex-column p-0 m-0">
+                    <span id="footer-hoursCounter" class="h3 counter mb-0">00:</span>
+                    <span class="subtext">Hours</span>
+                </span>
+                <span class=" col-3 d-flex flex-column p-0 m-0">
+                    <span id="footer-minutesCounter" class="h3 counter mb-0">00:</span>
+                    <span class="subtext">Minutes</span>
+                </span>
+                <span class=" col-3 d-flex flex-column p-0 pl-3 m-0 ">
+                    <span id="footer-secondsCounter" class="h3 counter mb-0">00</span>
+                    <span class="subtext pl-2">Seconds</span>
+                </span>
+
+            </div>
+            <a href="#" class="text-reset text-decoration-none my-auto">
+                <button class="join-btn btn btn-success btn-lg text-light border-none"><strong class="p-0">Join Now
+                        <i class="bi bi-arrow-right"></i></strong></button>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        const hoursCount = document.getElementById('hoursCounter');
+        const minutesCount = document.getElementById('minutesCounter');
+        const secondsCount = document.getElementById('secondsCounter');
+
+        const hoursCountFooter = document.getElementById('footer-hoursCounter');
+        const minutesCountFooter = document.getElementById('footer-minutesCounter');
+        const secondsCountFooter = document.getElementById('footer-secondsCounter');
+
+        let futureDate = new Date(); // Start with the current date and time
+        futureDate.setDate(futureDate.getDate() + 1); // Set futureDate to tomorrow
+        futureDate.setHours(23, 59, 59, 999); // Set time to 11:59:59 PM
+
+        function countdown() {
+            let currDate = new Date();
+
+            let currHours;
+            let currMinutes;
+            let currSeconds;
+
+            let myDate = futureDate - currDate;
+
+            currHours = Math.floor(myDate / 1000 / 60 / 60) % 24;
+            currMinutes = Math.floor(myDate / 1000 / 60) % 60;
+            currSeconds = Math.floor(myDate / 1000) % 60;
+
+            hoursCount.innerHTML = currHours > 9 ? currHours : '0' + currHours;
+            minutesCount.innerHTML = currMinutes > 9 ? currMinutes : '0' + currMinutes;
+            secondsCount.innerHTML = currSeconds > 9 ? currSeconds : '0' + currSeconds;
+
+            hoursCountFooter.innerHTML = hoursCount.innerHTML;
+            minutesCountFooter.innerHTML = minutesCount.innerHTML;
+            secondsCountFooter.innerHTML = secondsCount.innerHTML;
+        }
+
+        countdown();
+        setInterval(countdown, 1000);
+
+
+
+    </script>
+
+</body>
+
+</html>
